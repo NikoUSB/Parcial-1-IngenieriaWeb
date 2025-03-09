@@ -22,8 +22,22 @@ public class GameController {
     }
 
     @GetMapping
-    public String main(){
-        return "API GAMES";
+    public String main() {
+        return """
+        <html>
+        <head>
+            <title>API Games</title>
+            <link rel="stylesheet" type="text/css" href="/style.css"
+        </head>
+        <body>
+            <div class="container">
+                <h1>Bienvenido a API Games</h1>
+                <img src="/main.png" alt="Game Image">
+                <br>
+                <a href="http://localhost:8080/api/v2/games/">Mostrar JSON con juegos</a>
+        </body>
+        </html>
+    """;
     }
 
     @GetMapping("/")
