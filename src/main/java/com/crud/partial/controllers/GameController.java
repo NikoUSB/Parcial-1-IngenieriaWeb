@@ -47,7 +47,7 @@ public class GameController {
 
     @GetMapping("/{id}")
     public ResponseEntity getGame(@PathVariable("id") UUID id){
-        return new ResponseEntity(gamesService.getGame(id), HttpStatus.CREATED);
+        return new ResponseEntity(gamesService.getGame(id), HttpStatus.OK);
     }
 
     @PutMapping("/{id}")

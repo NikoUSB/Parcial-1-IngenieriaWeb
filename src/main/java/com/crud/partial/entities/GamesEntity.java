@@ -11,7 +11,7 @@ import java.util.UUID;
 @Setter
 @Getter
 @Entity
-@Table
+@Table(name = "Games")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
